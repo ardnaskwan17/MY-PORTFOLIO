@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Sandralyn S. Kwan, an aspiring front-end developer and BS Information Systems student.">
+  <title>Sandralyn's Little Corner</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <header class="header">
+
+    <nav class="nav container">
+      <a class="logo" href="#home">SK<span>♡</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <button class="theme-btn" id="themeBtn" aria-label="Switch color theme">☾</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="blob blob-one"></div>
+      <div class="blob blob-two"></div>
+
+      <div class="container hero-grid reveal">
+
+        <div class="photo-wrap"><span class="tape"></span>
+          <img src="prof.jpe" alt="Sandralyn S. Kwan"><span class="doodle">✦ ♡</span>
+        </div>
+
+        <div class="hero-copy">
+
+          <p class="kicker">WELCOME TO MY LITTLE CORNER ✦</p>
+          <h1>Hi, I'm <span>Sandralyn.</span></h1>
+
+          <p class="typing-line">
+            <span id="typingText"></span>
+            <span class="cursor">|</span>
+          </p>
+
+          <p class="intro">A second-year BS Information Systems student who loves turning ideas into useful systems.
+             I'm learning, building, and working toward becoming a full-stack developer and software engineer.
+            </p>
+
+          <div class="hero-buttons">
+            <a class="btn primary" href="#projects">See what I built</a>
+            <a class="btn secondary" href="mailto:ardnaskwan17@gmail.com">Say hello ♡</a>
+          </div>
+
+          <div class="mini-info">
+            <span>⌖ Metro Manila, Philippines</span>
+            <span>✦ Open to learning opportunities</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container reveal" id="about">
+
+      <div class="section-title">
+        <p>01 · ABOUT ME</p>
+        <h2>There's more to me than code.</h2>
+      </div>
+
+      <div class="about-grid">
+        <article class="card about-card">
+
+          <h3>My story</h3>
+          <p>I want to create systems that can help people, satisfy users' needs, and support business, academic, creative, or advocacy ideas. 
+            That goal keeps me curious and motivates me to learn beyond front-end development.</p>
+            <p>In group projects, I often become the programmer — the person turning our plans into something we can actually open, click, and use.</p>
+            
+            <div class="note">small steps → meaningful systems ♡</div>
+        </article>
+
+        <article class="card facts-card">
+          <h3>Click a little fact ✨</h3>
+          <button class="fact-btn" data-fact="I enjoy reading when I want a quiet break from screens.">📚 Reading</button>
+          <button class="fact-btn" data-fact="Gaming is one of the ways I relax and have fun.">🎮 Gaming</button>
+          <button class="fact-btn" data-fact="I enjoy cooking — good food makes me happy.">🍳 Cooking</button>
+          <button class="fact-btn" data-fact="Music helps me calm down and focus, and I also enjoy playing piano.">🎹 Music & Piano</button>
+          <p class="fact-output" id="factOutput">Pick one! I'll tell you a little more ♡</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section soft" id="skills">
+      
+      <div class="container reveal">
+
+      <div class="section-title">
+        <p>02 · MY TOOLBOX</p><h2>Skills I'm growing.</h2>
+      </div>
+
+      <div class="skill-grid">
+
+        <article class="card">
+          <h3>Front-End</h3>
+          <div class="chips">
+            <button class="skill" data-info="Used for the structure of my web pages and systems.">HTML</button>
+            <button class="skill" data-info="Used to style layouts, forms, dashboards, and responsive pages.">CSS</button>
+            <button class="skill" data-info="Used for small interactive behaviors and page functionality.">JavaScript</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Programming</h3>
+          <div class="chips">
+            <button class="skill" data-info="Used in programming exercises and practice projects.">Python</button>
+            <button class="skill" data-info="Used in coursework for programming logic and data input.">Java</button>
+            <button class="skill" data-info="Used for my Daily Expenses console program and exercises.">C++</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Work & Computer Skills</h3>
+          <div class="chips">
+            <button class="skill" data-info="Used during my real data-encoding work experience.">Microsoft Excel</button>
+            <button class="skill" data-info="Used for documents, school work, and productivity tasks.">Microsoft Office</button>
+            <button class="skill" data-info="Experience organizing, checking, and managing information accurately.">Data Management</button>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="skill-message" id="skillMessage">Tip: click a skill to see where I've used it. ✦</div>
+      <div class="soft-skills card">
+        <h3>Soft skills</h3>
+        <div class="chips plain">
+          <span>Problem-Solving</span>
+          <span>Analytical Thinking</span>
+          <span>Teamwork</span>
+          <span>Adaptability</span>
+          <span>Communication</span>
+          <span>Attention to Detail</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+
+      <div class="section-title reveal">
+
+        <p>03 · MY WORK</p>
+        <h2>Things I've built.</h2>
+        <span>Featured work first, then the beginner activities that show where my journey started.</span>
+      </div>
+
+      <div class="filters reveal">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="featured">Featured</button>
+        <button class="filter" data-filter="web">Web</button>
+        <button class="filter" data-filter="programming">Programming</button>
+        <button class="filter" data-filter="beginner">Beginner Activities</button>
+      </div>
+
+      <div class="project-grid">
+
+        <article class="project-card reveal" data-category="featured web">
+          <img src="admin.png" alt="K-VOGUE admin dashboard">
+          <div><span class="label">FEATURED</span>
+            <h3>K-VOGUE Admin Dashboard</h3>
+            <p>Grocery store admin interface for inventory, orders, categories, and sales overview. 
+              I handled the programming for our group.</p>
+              
+              <div class="chips tiny">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="featured web">
+          <img src="cafe.png" alt="Cafe 408 homepage">
+          <div><span class="label">FEATURED</span><h3>Café 408</h3>
+            <p>An EXO-inspired café website with menu, ordering, contact, and login areas. 
+              I handled the programming for our group.</p>
+              
+              <div class="chips tiny">
+                <span>Web System</span>
+                <span>Group Project</span>
+              </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="featured web">
+          <img src="portal.png" alt="MALIBAY Portal login">
+          <div><span class="label">FEATURED</span>
+            <h3>MALIBAY Portal</h3>
+            <p>A portal interface featuring role selection, login, and sign-up entry points.</p>
+            
+            <div class="chips tiny">
+              <span>Portal</span>
+              <span>UI</span>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="project-card reveal" data-category="featured programming">
+          <img src="project.png" alt="C++ daily expenses output">
+          <div><span class="label">FEATURED</span>
+            <h3>Daily Expenses Tracker</h3>
+            <p>A C++ console program that records daily expenses and displays weekly totals.</p>
+            
+            <div class="chips tiny">
+              <span>C++</span>
+              <span>Console</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="web">
+          <img src="login.png" alt="K-VOGUE login">
+          <div>
+            <h3>Login & Registration</h3>
+            <p>Login and account registration pages for K-VOGUE.</p>
+            
+            <div class="chips tiny">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="beginner web">
+          <img src="grocery.png" alt="Grocery categories"><div>
+            <h3>Grocery Categories</h3>
+            <p>Category-card interface practice for a grocery project.</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="beginner web">
+          <img src="mobile.png" alt="Mobile phone table">
+          <div>
+            <h3>Mobile Phone Table</h3>
+            <p>An early HTML table activity displaying products, images, and prices.</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="beginner web">
+          <img src="time.png" alt="HTML timetable">
+          <div>
+            <h3>Class Timetable</h3>
+            <p>Practice using tables, form controls, rows, and columns.</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="beginner web">
+          <img src="love.png" alt="Valentine webpage">
+          <div>
+            <h3>Valentine's Webpage</h3>
+            <p>An early themed HTML activity using text, links, tables, and images.</p>
+          </div>
+        </article>
+      </div>
+
+
+      <div class="center">
+        <a class="btn primary" href="https://github.com/ardnaskwan17" target="_blank" rel="noopener noreferrer">Visit my GitHub ↗</a>
+      </div>
+    </section>
+
+    <section class="section soft" id="journey">
+      <div class="container reveal">
+        <div class="section-title">
+          <p>04 · MY JOURNEY</p>
+          <h2>Experience & education.</h2>
+        </div>
+      <div class="journey-grid">
+
+      <article class="card timeline">
+        <h3>💼 Experience</h3>
+        <div class="timeline-item"><span>March 2021 — November 2023</span>
+          <h4>Data Encoder / Excel Coder</h4>
+          <b>Junlec Printing Supply · Remote</b>
+          <p>Organized receipt data in Excel, checked purchase totals, 
+            prepared reports, handled confidential records, and
+             coordinated with office personnel.
+          </p>
+        </div>
+        
+        <div class="timeline-item">
+          <span>Academic projects</span>
+          <h4>Group Programmer</h4>
+          <p>Frequently responsible for coding group systems, including Café 408 and the K-VOGUE admin dashboard.</p>
+        </div>
+      </article>
+
+      <article class="card timeline">
+        <h3>🎓 Education</h3>
+        <div class="timeline-item">
+          <span>Current · Expected 2029</span>
+          <h4>BS Information Systems</h4>
+          <p>Dr. Filemon C. Aguilar Memorial College of Las Piñas City · Second Year</p>
+        </div>
+        
+        <div class="timeline-item">
+          <span>Graduated 2025</span>
+          <h4>STEM Strand</h4>
+          <p>STI College Las Piñas · Senior High School</p>
+        </div>
+        
+        <div class="timeline-item">
+          <span>Graduated 2023</span>
+          <h4>Junior High School</h4>
+          <p>Las Piñas East National High School</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section container reveal">
+  <div class="section-title">
+    <p>05 · LITTLE WINS</p>
+    <h2>Growth beyond projects.</h2>
+  </div>
+  
+  <div class="wins-grid">
+    
+    <article class="card">
+      <h3>Recognition</h3>
+      <p>My school journey has included academic recognition, leadership achievements, singing, and high-grade certificates during elementary and high school.</p>
+    </article>
+    
+    <article class="card goal">
+      <h3>Where I'm heading ↗</h3>
+      <p><strong>Next goal:</strong> Junior Web Developer.</p>
+      <p>Then I want to keep growing toward full-stack development and 
+        software engineering while creating systems that are useful to real people.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container contact-grid reveal">
+    <div><p class="kicker">06 · LET'S CONNECT</p>
+      <h2>Have an idea? Say hi ♡</h2>
+      <p>I'm still learning, but I'm always excited to build, improve, and discover something new.</p>
+    </div>
+    
+    <div class="contact-card">
+      <a href="mailto:ardnaskwan17@gmail.com">
+        <b>Email</b><span>ardnaskwan17@gmail.com ↗</span></a>
+      <a href="https://github.com/ardnaskwan17" target="_blank" rel="noopener noreferrer">
+        <b>GitHub</b><span>@ardnaskwan17 ↗</span></a>
+
+      <a href="https://www.linkedin.com/in/sandralyn-kwan-460a07447/" target="_blank" rel="noopener noreferrer">
+        <b>LinkedIn</b><span>View profile ↗</span></a>
+          
+      <button id="copyEmail">Copy my email</button>
+        <p id="copyStatus"></p>
+    </div>
+  </div>
+</section>
+  
+</main>
+
+  <button class="top-btn" id="topBtn" aria-label="Back to top">↑</button>
+  <footer>
+    <div class="container footer">
+      <span>Made with curiosity, code & a little bit of blue ♡</span>
+      <span>© <span id="year"></span> Sandralyn S. Kwan</span>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
